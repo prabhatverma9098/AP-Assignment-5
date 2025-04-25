@@ -1,4 +1,3 @@
-// Abstract class
 abstract class Employee {
     String name;
     int id;
@@ -7,8 +6,6 @@ abstract class Employee {
         this.name = name;
         this.id = id;
     }
-
-    // Abstract method
     public abstract double calculateSalary();
 
     public void displayInfo() {
@@ -16,7 +13,6 @@ abstract class Employee {
     }
 }
 
-// Full-time employee class
 class FullTimeEmployee extends Employee {
     private double monthlySalary;
 
@@ -30,8 +26,6 @@ class FullTimeEmployee extends Employee {
         return monthlySalary;
     }
 }
-
-// Part-time employee class
 class PartTimeEmployee extends Employee {
     private double hourlyRate;
     private int hoursWorked;
@@ -48,7 +42,6 @@ class PartTimeEmployee extends Employee {
     }
 }
 
-// Main class to test
 public class EmployeeDemo {
     public static void main(String[] args) {
         FullTimeEmployee fte = new FullTimeEmployee("Alice", 101, 5000.0);
